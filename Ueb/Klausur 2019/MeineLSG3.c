@@ -36,10 +36,10 @@ int main (void)
     double ergebnis1;
     double ergebnis2;
 
-      printf("Geben Sie den Radius und die Höhe des ersten Zylinders an:");
+      printf("Geben Sie den Radius und die Höhe des ersten Zylinders in cm an:");
       a = read_cylinder(&Zylinder1);
     
-      printf("Geben Sie den Radius und die Höhe des zweiten Zylinderes an: ");
+      printf("Geben Sie den Radius und die Höhe des zweiten Zylinderes in cm an: ");
       read_cylinder(&Zylinder2);
       if (a == -1 || b == -1 ) 
        {
@@ -50,15 +50,15 @@ int main (void)
           ergebnis1 = volume_cylinder (&Zylinder1);
           ergebnis2 = volume_cylinder (&Zylinder2);
         
-           printf("Zylinder 1: Radius %lf, Hoehe: %lf, Volumen: %lf \n", Zylinder1.r,Zylinder1.h,ergebnis1);
-           printf("Zylinder 2: Radius %lf, Hoehe: %lf, Volumen: %lf \n", Zylinder2.r,Zylinder2.h,ergebnis2);
+           printf("Zylinder 1: Radius %2.lf, Hoehe: %2.lf, Volumen: %2.lf \n", Zylinder1.r,Zylinder1.h,ergebnis1);
+           printf("Zylinder 2: Radius %2.lf, Hoehe: %2.lf, Volumen: %2.lf \n", Zylinder2.r,Zylinder2.h,ergebnis2);
 
       if (ergebnis1 == ergebnis2)
         {
          printf("Die Volumen sind gleich!\n");
         }
      else 
-         printf("Die Volumen sind unterschiedlich!\n");
+        printf("Die Volumen sind unterschiedlich!\n");
 
       return 0;
 }
