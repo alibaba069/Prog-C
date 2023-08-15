@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (void)
+{
+int Exponent;
+float Basis;
+int i;
+
+printf("Geben Sie die Basis an: "); scanf("%f",&Basis);
+ 
+while(Exponent<0)
+{
+printf("Geben Sie einen Exponenten an: "); 
+scanf("%d".&Exponent);
+}
+
+    return 0;
+}
